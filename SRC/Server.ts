@@ -1,10 +1,7 @@
-console.log("hello")
+console.log("hello");
 
+function display(msg: string) {
+  console.log(msg);
+}
 
- function display(msg: string){
-    console.log(msg)
- }
-
-
-
-  display("ram")
+display("ram");
