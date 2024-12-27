@@ -1,5 +1,7 @@
 import {Config} from "./config";
 import app from "./app"
+import { loggers } from "winston";
+import logger from "./config/logger";
 
 
 const port= Config.PORT
@@ -10,7 +12,7 @@ const start= ()=>
   {
     try{
       app.listen(port, ()=>{
-        console.log("started")})
+       logger.info("sever listening on the  port")})
     }catch(err)
     
     {
